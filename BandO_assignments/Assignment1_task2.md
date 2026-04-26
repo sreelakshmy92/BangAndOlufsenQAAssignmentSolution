@@ -39,5 +39,6 @@ Below will be prioritization areas as these are high risk areas and can impact u
 4. Battery reporting on app and battery usage pattern
 5. App memory usage
 
-- how you would think about coverage across iOS and Android
+- how you would think about coverage across iOS and Android?
+
 Test have to be run on IOS and Android as the Bluetooth flows will be different and single platform validation will not be sufficient. Tests should also consider the features supported by the BLE stack of individual OS -eg:  if there are any features or paths suupported only in IOS. Also, it will be better if testing is distributed across 2-3 device manufacturers and multiple versions of OS(N, N-1 and N-2 - to be decided from historic data)
