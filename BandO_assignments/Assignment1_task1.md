@@ -4,9 +4,9 @@ Assignment 1
 Task 1:
 
 Following clarifications required from the development team:
-- Firmware compatability to the feature. Minimum firmware required to enable this feature. Error handling if the FW does not support
+- Firmware compatability to the feature- Minimum firmware required to enable this feature. Error handling if the FW does not support
 - What is definition of connected - Is it when primary earbud connected or when both connected?
-- Course of action if time take to change the mode > 2ms - error or retry ?
+- Course of action if time taken to change the mode > 2ms - error or retry ?
 If retry, how many are allowed. What is the error handling mechanism if it fails.
 - How to determine if mode change is success - Is there any feedback from device and is there any display message on app. Is there any way to query device mode for testing purpose
 - What is app behavior when mode change is not allowed(  disconnected / low battery) - adaptive listening mode button grayed out or error message displayed on attempting to change?
@@ -14,8 +14,8 @@ If retry, how many are allowed. What is the error handling mechanism if it fails
 - Is mode change possible from device. if yes, what has more priority - app or device?
 - Behavior during phone call - Is mode locked during call. What happens if mode change attempted during call?
 - What device is considered for determining battery level - primary earbud or both ?
-- Is 2ms a strict requirement or is there any acceptable deviation in high interference scenario?
-- Where is last selected mode stored - device or app memory? if in app memory,  What happens if app is reinstalled. if in device, is it persistent when a new phone is connected to device.
+- Is 2s a strict requirement or is there any acceptable deviation in high interference scenario?
+- Where is last selected mode stored - device or app memory? if in device, is it persistent when a new phone is connected to device.
 - Is there any dependencies for iOS and Android versions
 
 Assumptions :
@@ -31,7 +31,7 @@ Test strategy: Initate mode change from app and verify it on device. Need a mech
 - FW mismatch - If the FW doesnot support feature and app tries to change the mode, it can lead to crash or silent failures which can result in loss of reliability from the user. 
 Test strategy: Multi-firmware matrix testing on both platforms
 
-- Bluetooth connection quality variation in real environments which can impact the latency spec (2ms) in different environments. This need a mechanism for multiple attempts to mitigate this risk and acceptable deviation from the 2ms requirement under high interference environments.
+- Bluetooth connection quality variation in real environments which can impact the latency spec (2s) in different environments. This need a mechanism for multiple attempts to mitigate this risk and acceptable deviation from the 2ms requirement under high interference environments.
 Test strategy: Test the mode change in different envrionments and make a performance comparison.
 
 - Difference in behavior across iOS and android.

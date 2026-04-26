@@ -36,15 +36,15 @@ After reconnection, app is not querying the device state before displaying previ
 Impact:
 Core feature expectation is broken
 
-FW version :
-App version:
-OS : Observed in iOS (version), android (version)
-earbud model:
-Phone model:
-Severity : High
-Priority : Showstopper
-Reproducibility: High(consistent)
-Attachments : Device logs, app logs, screen recordings for the failures
+- FW version :
+- App version:
+- OS : Observed in iOS (version), android (version)
+- earbud model:
+- Phone model:
+- Severity : High
+- Priority : Showstopper
+- Reproducibility: High(consistent)
+- Attachments : Device logs, app logs, screen recordings for the failures
 
 
 

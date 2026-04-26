@@ -26,10 +26,10 @@ Below will be prioritization areas as these are high risk areas and can impact u
 4. Verify low battery scenario left earbud only, right earbud only, both earbuds , case only etc.
 5. Connect a new phone to device and verify if the mode reported from app is correct.
 6. Verify the scenario when headset is connected to both laptop and phone.
-7. Verification at the edge of Bluetooth range(distance between headset and phone is nearing the max range) and error handling on app when mode switch is initiated if device just went out of range.
+7. Verification at the edge of Bluetooth range and error handling on app when mode switch is initiated if device just went out of range.
 8. FW compatability and platform compatability matrix
 9. What happens if app is backgrounded or killed during switch
-10. Audio -> call transition during switch (incoming call)
+10. Audio -> call transition during switch 
 11. Boundary value testing around 5% battery
 
 - what regression areas would you consider important
@@ -39,5 +39,6 @@ Below will be prioritization areas as these are high risk areas and can impact u
 4. Battery reporting on app and battery usage pattern
 5. App memory usage
 
-- how you would think about coverage across iOS and Android
+- how you would think about coverage across iOS and Android?
+
 Test have to be run on IOS and Android as the Bluetooth flows will be different and single platform validation will not be sufficient. Tests should also consider the features supported by the BLE stack of individual OS -eg:  if there are any features or paths suupported only in IOS. Also, it will be better if testing is distributed across 2-3 device manufacturers and multiple versions of OS(N, N-1 and N-2 - to be decided from historic data)

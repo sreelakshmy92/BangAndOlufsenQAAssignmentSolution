@@ -4,11 +4,11 @@ Assignment 1
 Task 4:
 
 1. Switch the mode from app and verify that mode is reflected on device .
-TC ID     : xxx
-Feature   : Adaptive listening mode
-Test type : Functional
-Platform  : IOS, Android
-Complexity : Medium
+- TC ID     : xxx
+- Feature   : Adaptive listening mode
+- Test type : Functional
+- Platform  : IOS, Android
+
 
 Prerequisites:
 - Device is paired with the app.
@@ -37,11 +37,11 @@ Pass/Fail Criteria:
 
 2. Verify the mode is restored after reconnect.
 
-TC ID     : xxx
-Feature   : Adaptive listening mode
-Test type : Functional
-Platform  : IOS, Android
-Complexity : Medium
+- TC ID     : xxx
+- Feature   : Adaptive listening mode
+- Test type : Functional
+- Platform  : IOS, Android
+
 
 Prerequisites:
 - Device is paired with the app.
